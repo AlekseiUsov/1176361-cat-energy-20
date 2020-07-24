@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -12,16 +13,19 @@
     <div class="header__wrapper">
       <div class="header__block">
         <a href="index.html" class="header__logo header__logo--icon"><img src="img/logo-mobile.svg" alt="Логотип"></a>
-        <a href="index.html" class="header__logo header__logo--text"><img src="img/logo 2.svg" alt="Cat Energy"></a>
-        <button class="header__toggle">
-          <span>Открыть меню</span>
-        </button>
+        <div class="header__toggle">
+          <a href="index.html" class="header__logo header__logo--menu"><img src="img/icon-mobile-menu.svg" alt="Cat Energy"></a>
+        </div>
       </div>
       <ul class="header__list">
-        <li class="header__item nav__item--active"><a href="index.html">Главная</a></li>
-        <li class="header__item"><a href="catalog.html">Каталог продукции</a></li>
-        <li class="header__item"><a href="form.html">Подбор программы</a></li>
+        <li><a class="header__link nav__link--active" href="index.html">Главная</a></li>
+        <li><a class="header__link" href="catalog.html">Каталог продукции</a></li>
+        <li><a class="header__link" href="form.html">Подбор программы</a></li>
       </ul>
+      <div class="header__inner">
+        <h3 class="header__title">Подбор программы</h3>
+        <p class="header__text">Подбор программы</p>
+      </div>
     </div>
   </header>
   <main>
@@ -31,29 +35,29 @@
       <div class="form__info">
         <div class="form__item form__item--name">
           <label class="form__label" for="name">Имя*:</label>
-          <input class="form__input" id="name" type="text" name="name" placeholder="Барсик">
+          <input class="form__input form__input--name" id="name" type="text" name="name" placeholder="Барсик">
         </div>
         <div class="form__item form--weight">
           <label class="form__label" for="weight">Вес(кг)*:</label>
-          <input class="form__input" id="weight" type="text" name="weight" placeholder="7">
+          <input class="form__input form__input--weight" id="weight" type="text" name="weight" placeholder="7">
         </div>
         <div class="form__item form--age">
           <label class="form__label" for="age">Возраст(лет):</label>
-          <input class="form__input" id="age" type="text" name="age" placeholder="7">
+          <input class="form__input form__input--age" id="age" type="text" name="age" placeholder="7">
         </div>
       </div>
       <div class="form__goal">
         <div class="form__item form__item--radio">
           <input class="form__input" type="radio" id="lose__weight" checked>
-          <label class="form__label" for="lose__weight">Похудение</label>
+          <label class="form__label form__label--radio" for="lose__weight">Похудение</label>
         </div>
         <div class="form__item form__item--radio">
           <input class="form__input" type="radio" id="put__weight">
-          <label class="form__label" for="put__weight">Похудение</label>
+          <label class="form__label form__label--radio" for="put__weight">Похудение</label>
         </div>
         <div class="form__item form__item--radio">
           <input class="form__input" type="radio" id="unknown">
-          <label class="form__label" for="unknown">Не знаю (Нужен ваш совет)</label>
+          <label class="form__label form__label--radio" for="unknown">Не знаю (Нужен ваш совет)</label>
         </div>
       </div>
       <div class="form__contacts">
@@ -68,9 +72,8 @@
         </div>
       </div>
       <div class="form__comment">
-        <h3 class="form__title" for="form__field">Комментарий</h3>
-        <textarea class="form__textarea" id="form__field" rows="5"
-          placeholder="Расскажите обо всех повадках кота"></textarea>
+        <h3 class="form__title form__title--h3" for="form__field">Комментарий</h3>
+        <textarea class="form__textarea" id="form__field" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
       </div>
       <div class="form__optionally">
         <h3 class="form__title form__title--h2">Дополнительно</h3>
@@ -97,23 +100,31 @@
       </div>
     </section>
     <section class="map">
-      <div class="map__inner">
-        <p class="map__text">приглашаем к сотрудничеству дилеров!</p>
-        <p class="map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="map__wrapper">
+        <div class="map__inner">
+          <h4 class="map__title">приглашаем к сотрудничеству дилеров!</h4>
+          <p class="map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="map__img">
+          <img src="img/bg-map-mobile@1x.png">
+        </div>
       </div>
-      <div class="map__img"><img src="https://via.placeholder.com/150x150"></div>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__img"></div>
-    <ul class="footer__list">
-      <li class="footer__item footer__item-vk"><img src="https://via.placeholder.com/150x150"></li>
-      <li class="footer__item footer__item-inst"><img src="https://via.placeholder.com/150x150"></li>
-      <li class="footer__item footer__item-facebook"><img src="https://via.placeholder.com/150x150"></li>
-    </ul>
-    <div class="footer__inner">
-      <p class="footer__text"></p>
-      <div class="footer__logo"><img src="https://via.placeholder.com/150x150">.</div>
+    <div class="footer__wrapper">
+      <div class="footer__img">
+        <img src="img/logo-footer.svg">
+      </div>
+      <ul class="footer__list">
+        <li class="footer__item footer__item-vk"><img src="img/icon-vk.svg"></li>
+        <li class="footer__item footer__item-inst"><img src="img/icon-insta.svg"></li>
+        <li class="footer__item footer__item-facebook"><img src="img/icon-fb.svg"></li>
+      </ul>
+      <div class="footer__inner">
+        <p class="footer__text">HTML Academy</p>
+        <div class="footer__logo"><img src="https://via.placeholder.com/150x150"></div>
+      </div>
     </div>
   </footer>
 </body>
