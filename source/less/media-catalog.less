@@ -1,0 +1,242 @@
+@media screen and (min-width: @tablet-width) {
+
+  .catalog__title--h2 {
+    border: none;
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 75px;
+  }
+
+  .catalog__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 140px;
+    padding-top: 160px;
+  }
+
+  .catalog__item {
+    border-top: none;
+    background-color: @light-grey;
+    margin-top: 0;
+  }
+
+  .catalog__block {
+    flex-direction: column;
+  }
+
+  .catalog__img {
+    margin: 0 auto;
+  }
+
+  .catalog__inner {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .catalog__img--1 img {
+    width: 161px;
+    height: 172px;
+    margin-top: -70px;
+    padding-top: 0;
+  }
+
+  .catalog__img--2 img {
+    width: 168px;
+    height: 206px;
+    margin-top: -90px;
+    padding-top: 0;
+  }
+
+  .catalog__img--3 img {
+    width: 161px;
+    height: 172px;
+    margin-top: -70px;
+    padding-top: 0;
+  }
+
+  .catalog__img--4 img {
+    width: 168px;
+    height: 206px;
+    margin-top: -90px;
+    padding-top: 0;
+  }
+
+  .catalog__img--5 img {
+    width: 161px;
+    height: 172px;
+    margin-top: -70px;
+    padding-top: 0;
+  }
+
+  .catalog__img--6 img {
+    width: 168px;
+    height: 206px;
+    margin-top: -90px;
+    padding-top: 0;
+  }
+
+  .catalog__img--7 img {
+    display: block;
+    width: 163px;
+    height: 174px;
+    margin-top: -70px;
+    padding-top: 0;
+  }
+
+  .catalog__button {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 248px;
+    height: 39px;
+  }
+
+  .catalog__title--h4 {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .catalog__p {
+    border-bottom: 1px solid #CDCDCD;
+  }
+
+  .catalog__text {
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 9px;
+    padding-top: 7px;
+  }
+
+  .catalog__more {
+    margin-top: 0;
+    border: 2px solid #F2F2F2
+  }
+
+  .additional-items__title--h3 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+
+  .additional-items__item {
+    border-bottom: none;
+    border: 1px solid #CDCDCD;
+    border-collapse: collapse;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+
+  .additional-items__p {
+    width: 30%;
+  }
+
+  .additional-items__block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  .additional-items__button {
+    width: 100%;
+  }
+
+  .additional-items__text {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .additional-items__banner {
+    flex-direction: row;
+    align-items: center;
+    height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .additional-items__icon {
+    padding-top: 0;
+  }
+
+  .catalog__title--half {
+    display: inline-block;
+
+    &:last-child {
+      margin-left: 5px;
+    }
+  }
+
+  .catalog__title--gram {
+    display: none;
+  }
+
+  .catalog__title--hidden {
+    display: block;
+    text-align: center;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #444444;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+}
+
+@media screen and (min-width: @desktop-width) {
+
+  .catalog__items {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .catalog__button {
+    width: 168px;
+    height: 40px;
+  }
+
+  .additional-items__inner {
+    display: grid;
+    grid-column-gap: 80px;
+    grid-template-columns: 70% 30%;
+  }
+
+  .additional-items__banner {
+    flex-direction: column;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    height: 289px;
+    width: 245px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .additional-items__item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-left: none;
+    border-right: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .additional-items__block {
+    flex: 1;
+    padding-bottom: 0;
+  }
+
+  .additional-items__button {
+    width: 244px;
+  }
+
+  .additional-items__p {
+    min-width: 290px;
+    margin-right: 40px;
+  }
+}
