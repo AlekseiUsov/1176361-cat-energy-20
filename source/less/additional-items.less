@@ -7,7 +7,7 @@
   line-height: 24px;
   text-align: left;
   color: #000000;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 25px;
 }
 
@@ -22,10 +22,15 @@
 }
 
 .additional-items__item {
-  padding-top: 13px;
+  box-sizing: border-box;
+  padding-top: 18px;
   padding-bottom: 18px;
   border-bottom: 1px solid #CDCDCD;
   border-top: 1px solid #CDCDCD;
+
+  &:nth-child(2) {
+    padding-top: 13px;
+  }
 }
 
 
@@ -62,6 +67,10 @@
 
 .additional-items__button {
   .banner__button;
+
+  &--1 {
+    margin-top: 10px;
+  }
 }
 
 .additional-items__banner {
@@ -74,15 +83,15 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;
-  margin-top: 70px;
+  margin-top: 38px;
   margin-bottom: 70px;
 }
 
 .additional-items__icon {
   padding-top: 40px;
   margin: 0 auto;
-  width: 48.29px;
-  height: 34.86px;
+  width: 58.29px;
+  height: 70.86px;
 }
 
 .additional-items__text--banner {
