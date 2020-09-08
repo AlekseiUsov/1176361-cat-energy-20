@@ -1,0 +1,115 @@
+.show-more {
+
+  .col-1;
+  padding: 25px 0px 22px;
+  border-bottom: 1px solid var(--special_grey-2);
+  margin: 0 10px 30px;
+
+  &__title {
+    position: relative;
+    padding-top: 45px;
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--extra_dark_grey);
+    margin-bottom: 10px;
+  }
+
+  &__title::before {
+    position: absolute;
+    content: "";
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background: url("../img/plus.svg") no-repeat;
+  }
+
+  &__info {
+    display: block;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: var(--special_dark-grey);
+    margin-bottom: 23px;
+  }
+
+  &__btn {
+    display: block;
+    max-width: 280px;
+    width: 100%;
+    text-align: center;
+    color: var(--special_dark-grey);
+    text-transform: uppercase;
+    background-color: var(--basic_grey);
+    line-height: 40px;
+    font-size: 16px;
+    margin: 0px auto;
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    background-color: var(--special_grey-2);
+  }
+
+  &__btn:active {
+    background-color: var(--special_grey-2);
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+}
+
+@media (min-width: @tablet-width) {
+
+  .show-more {
+
+    border: 2px solid #F2F2F2;
+    .col-2;
+    margin: 0 30px 140px;
+    padding: 0px 36px;
+    height: min-content;
+
+    &__title {
+      padding-top: 161px;
+      font-size: 20px;
+      line-height: 24px;
+      width: 134px;
+      margin: 0px auto 23px;
+      text-align: center;
+    }
+
+    &__title::before {
+      width: 60px;
+      height: 60px;
+      top: 52px;
+      background: url("../img/plus-large.svg") no-repeat;
+    }
+
+    &__info {
+      width: 167px;
+      font-size: 16px;
+      margin: 0px auto 87px;
+    }
+
+    &__btn {
+      width: 248px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .show-more {
+    .col-4;
+    margin: 0 40px 140px;
+
+    &__btn {
+      width: 168px;
+    }
+  }
+}
